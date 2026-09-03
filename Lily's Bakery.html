@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lily's Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ffe6f0;
+      color: #5a2a2a;
+    }
+
+    header {
+      background-color: #fff0f5;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      color: #e75480;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #5a2a2a;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    @media(min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .hero-text {
+      max-width: 500px;
+      margin-top: 2rem;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-text button {
+      background-color: #e75480;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      background-color: #d14b72;
+    }
+
+    .hero-img img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Lily’s Bakery</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Shop</a>
+      <a href="#">Search</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Lily’s Bakery!</h1>
+      <p>At Lily’s Bakery, we serve sweet memories with every bite. Enjoy our freshly baked cupcakes, cookies, and more!</p>
+      <button>Order Now</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://media.istockphoto.com/id/473170532/photo/pink-cupcakes-with-sparklers.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=5w0BBepJ2GO2MY3iKAWOQFjCUJTFipbhr4kZqU3gXoI=" alt="Pink cupcakes with sparklers" />
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laura's Bakery | Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-pink-100 min-h-screen">
+  
+
+  <!-- Shop Section -->
+  <main class="p-10">
+    <h1 class="text-4xl font-bold text-brown-800 text-center mb-10">Our Baked Goods</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Item 1 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+
+<img 
+  src="https://media.istockphoto.com/id/953456556/photo/beautiful-home-made-red-cake-with-strawberries-and-blueberries.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=tI06HyHYWDufmGt_-y_Cm71_nFB1m6llfI6Mk1V8Lgs=" 
+  alt="Beautiful homemade red cake with strawberries and blueberries" 
+  class="w-full h-48 object-cover rounded-xl mb-4" 
+  loading="lazy"
+/>
+
+
+
+
+        <h2 class="text-xl font-semibold text-brown-800">Strawberry Cake</h2>
+        <p class="text-brown-700">$12.99</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+        <!-- Item 4 -->
+<div class="bg-white rounded-2xl shadow-md p-4 text-center">
+  <img 
+    src="https://media.istockphoto.com/id/1250200380/photo/two-croissants.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=lHDOBrsUOXPZYMFm9TfHM41fBFVdVLQUjjF_PMRxLfU=" 
+    alt="Two Croissants" 
+    class="w-full h-48 object-cover rounded-xl mb-4"
+  >
+</div>
+
+        <h2 class="text-xl font-semibold text-brown-800">Chocolate Croissant</h2>
+        <p class="text-brown-700">$4.50</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+          <img 
+  src="https://media.istockphoto.com/id/155154350/photo/vanilla-cupcake.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=2oOskZfHc1BOVfYBi8UklRx_l1p0t5538_2Z0Dc4uJQ=" 
+  alt="Vanilla Cupcake" 
+  
+/>
+        <h2 class="text-xl font-semibold text-brown-800">Vanilla Cupcake</h2>
+        <p class="text-brown-700">$3.99</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+        <img 
+  src="https://media.istockphoto.com/id/1020925594/photo/raspberry-pie.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ubbygDRblVetg69ftBtxegXAe08SeyHZz-JHanIDYGc=" 
+  alt="Raspberry Pie" 
+  class="w-full h-48 object-cover rounded-xl mb-4"
+/>
+ 
+        <h2 class="text-xl font-semibold text-brown-800">Raspberry Tart</h2>
+        <p class="text-brown-700">$15.25</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+		<img 
+  src="https://media.istockphoto.com/id/501125914/photo/chocolate-cake-isolated-on-white.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ng_Qb5EM4iZcmyqpwYwzwU_DVblybUY1WCmGBM0-rjU=" 
+  alt="Fancy chocolate cake isolated on white background" 
+  class="w-full h-48 object-cover rounded-xl mb-4" 
+  loading="lazy"
+/>
+
+
+        <h2 class="text-xl font-semibold text-brown-800">Chocolate Cake</h2>
+        <p class="text-brown-700">$4.75</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+        <img 
+  src="https://media.istockphoto.com/id/1968568998/photo/festive-christmas-cake-idea-cheesecake-decorated-with-gingerbread-cookies-and-sugared.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=NyMNQOsYYNM9DTtDvW93ZFN0aG5wxPQSVKbGEDy1puc=" 
+  alt="Festive Christmas cheesecake with gingerbread cookies and sugared cranberries" 
+  class="w-full h-48 object-cover rounded-xl mb-4" 
+  loading="lazy"
+/>
+        <h2 class="text-xl font-semibold text-brown-800">Berry Cheesecake</h2>
+        <p class="text-brown-700">$6.99</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+        <img 
+  src="https://media.istockphoto.com/id/1297653629/photo/colorful-sweet-macarons-or-macaroons-flavored-cookies-on-purple-background.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=tZYgpPP2zhVfE2U6LhEBxyjWRFaEgblEtP9nLFx-Wus=" 
+  alt="Colorful macarons on a purple background" 
+  class="w-full h-48 object-cover rounded-xl mb-4" 
+  loading="lazy"
+/>
+
+        <h2 class="text-xl font-semibold text-brown-800">Macarons (Box of 6)</h2>
+        <p class="text-brown-700">$9.99</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 text-center">
+        <img 
+  src="https://media.istockphoto.com/id/641237530/photo/red-velvet-cheesecake.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=VGUb632rJrIUUXKxtIo1z-hVPzJaH6YxCZYi0QVPEWs=" 
+  alt="Red Velvet Cheesecake with fresh fruit" 
+  class="w-full h-48 object-cover rounded-xl mb-4" 
+  loading="lazy"
+/>
+
+        <h2 class="text-xl font-semibold text-brown-800">Red Velvet Slice</h2>
+        <p class="text-brown-700">$5.50</p>
+        <button class="mt-3 px-4 py-2 bg-pink-200 text-brown-800 rounded-full hover:bg-pink-300">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Laura's Bakery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe6f0; /* pastel pink */
+      color: #4b2e2e; /* brown */
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1.header {
+      color: #d96ca5;
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      text-align: center;
+      width: 100%;
+      max-width: 900px;
+    }
+    .about-container {
+      display: flex;
+      gap: 40px;
+      max-width: 900px;
+      width: 100%;
+      padding: 0;
+      align-items: center;
+      flex-wrap: nowrap; /* prevent wrapping */
+    }
+    .about-container img {
+      width: 408px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex-shrink: 0; /* prevent image from shrinking */
+    }
+    .about-text {
+      flex: 1;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">🍰 Hi! I'm Lily — Welcome to Lily's Bakery!</h1>
+  <div class="about-container">
+    <img
+      src="https://media.istockphoto.com/id/1726218697/photo/smiling-young-woman-holding-fresh-bread-in-artisan-bakery.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=aohVraNrgK56XpfVCYrbSSzEpBCIzyXXczBA2KZgt84="
+      alt="Smiling young woman holding fresh bread in artisan bakery"
+      loading="lazy"
+    />
+    <div class="about-text">
+      <p>At Lily's Bakery, we whip up all kinds of pastries — from flaky
+croissants and buttery tarts to rich cakes and melt-in-your-mouth
+cookies. While our macarons and cupcakes are customer favorites,
+everything we bake is made with love, care, and a whole lot of
+sweetness!
+Baking has always been my happy place, and now I get to share that
+joy with you. Whether you're planning a party, picking up treats "just
+because," or looking for something extra special, we’ve got something
+fresh and delicious waiting for you.
+Thanks for stopping by — I hope you find your new favorite treat!
+💕.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laura's Bakery | Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-pink-100 min-h-screen">
+  <!-- Header -->
+ 
+
+
+    <!-- Testimonials Section -->
+    <section class="bg-pink-50 p-8 rounded-3xl shadow-xl my-16 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-brown-800 mb-8">What Our Customers Say</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <blockquote class="text-brown-700 italic border-l-4 border-pink-300 pl-4">
+          “Absolutely love the strawberry cake! It’s the best I’ve ever had.”<br><span class="block mt-2 font-semibold">– Mia R.</span>
+        </blockquote>
+        <blockquote class="text-brown-700 italic border-l-4 border-pink-300 pl-4">
+          “Lily’s Bakery makes every treat with love. Highly recommend!”<br><span class="block mt-2 font-semibold">– Daniel K.</span>
+        </blockquote>
+        <blockquote class="text-brown-700 italic border-l-4 border-pink-300 pl-4">
+          “Warm, inviting, and so delicious – I stop by every weekend!”<br><span class="block mt-2 font-semibold">– Priya L.</span>
+        </blockquote>
+        <blockquote class="text-brown-700 italic border-l-4 border-pink-300 pl-4">
+          “From cupcakes to croissants, everything is divine.”<br><span class="block mt-2 font-semibold">– James T.</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Behind the Scenes Section -->
+    <section class="my-16 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-brown-800 mb-8">Behind the Scenes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Baking Process" class="rounded-2xl object-cover h-56 w-full shadow-md">
+  <img
+    class="PnVbv5qRe5ya18jbe2Gt"
+    src="https://media.istockphoto.com/id/1186965676/photo/whipping-with-a-metal-whisk-of-pink-cream-for-baking.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=qGzHrqS1p2eeC4JTeICS8yF35ohQAQgFISuO4RlD_to="
+    alt="Whipping with a metal whisk of pink cream for baking"
+    width="300"
+    height="200"
+    loading="lazy"
+    style="border-radius: 16px; object-fit: cover;"
+  />
+
+        
+  <img
+    class="PnVbv5qRe5ya18jbe2Gt"
+    src="https://media.istockphoto.com/id/944730818/photo/women-in-pastry-bakery-as-confectioner-glazing-muffins-with-icing-bag.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=_5xBFyptVMp9p-8OmCyjZwFwS4RvjbYZr7iWSGXHKgU="
+    alt="Women in pastry bakery as confectioner glazing muffins with icing bag"
+    width="300"
+    height="200"
+    loading="lazy"
+    style="border-radius: 16px; object-fit: cover;"
+  />
+
+
+         <img
+    class="PnVbv5qRe5ya18jbe2Gt"
+    src="https://media.istockphoto.com/id/584470680/photo/baking-ingredients-for-cooking-croissants-over-wooden-background-copy-space.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=_Qiumbwo_OatYU124jyzs1cN9DAKCx94xeqKDaKdBC8="
+    alt="Baking ingredients for cooking croissants over wooden background, copy space"
+    width="300"
+    height="200"
+    loading="lazy"
+    style="border-radius: 16px; object-fit: cover; />
+        
+		
+		  <img
+    class="PnVbv5qRe5ya18jbe2Gt"
+    src="https://media.istockphoto.com/id/642434870/photo/fresh-croissants.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=qUiwkYfzwQt4DaLLtdqChch6crEKuRKu_uiovLDZW8I="
+    alt="Fresh croissants Young baker taking freshly baked croissants out of the cooling rack"
+    width="300"
+    height="217"
+    loading="lazy"
+    style="border-radius: 16px; object-fit: cover;"
+  />
+        <img
+    class="PnVbv5qRe5ya18jbe2Gt"
+    src="https://media.istockphoto.com/id/921788748/photo/portrait-of-confectioner-decorating-cake-in-restaurant-kitchen.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=SFVHFQz-gy2SOkS4rIlMObUtgk1bVPHZWPFKNBGtThg="
+    alt="Portrait of confectioner decorating cake in restaurant kitchen"
+    width="300"
+    height="200"
+    loading="lazy"
+    style="border-radius: 16px; object-fit: cover;"
+  />
+  
+<img
+    class="PnVbv5qRe5ya18jbe2Gt"
+    src="https://media.istockphoto.com/id/1412162456/photo/fresh-french-bread-and-croissants-in-a-bakery-in-cooling-rack.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=Es1n--n7dH-NPZfDzGa-_gpwOXI2OthZPd3wQBbuHZs="
+    alt="Fresh French Bread and croissants in a Bakery in cooling rack"
+    width="300"
+    height="200"
+    loading="lazy"
+    style="border-radius: 16px; object-fit: cover;"
+    fetchpriority="high"
+      </div>
+    </section>
+  </main>
+  
+  
+  <footer style="background: #1a1a2e; color: #f0f0f5; padding: 4rem 2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <div style="
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 2rem;
+  ">
+
+    <!-- About Section -->
+    <div style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #e94560;">Lily’s Bakery</h3>
+      <p style="line-height: 1.6; font-size: 1rem;">
+        At Lily’s Bakery, we create sweet moments with every bite. Freshly baked goods crafted with love and passion.
+      </p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa;">
+        Made with ❤️ in 2025.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <nav aria-label="Footer navigation" style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #e94560;">Quick Links</h4>
+      <ul style="list-style: none; padding: 0; font-size: 1rem; line-height: 2;">
+        <li><a href="#" style="color: #f0f0f5; text-decoration: none; transition: color 0.3s;">Home</a></li>
+        <li><a href="#" style="color: #f0f0f5; text-decoration: none; transition: color 0.3s;">About Us</a></li>
+        <li><a href="#" style="color: #f0f0f5; text-decoration: none; transition: color 0.3s;">Menu</a></li>
+        <li><a href="#" style="color: #f0f0f5; text-decoration: none; transition: color 0.3s;">Shop</a></li>
+        <li><a href="#" style="color: #f0f0f5; text-decoration: none; transition: color 0.3s;">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Info -->
+    <div style="flex: 1 1 250px; min-width: 250px;">
+      <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #e94560;">Contact</h4>
+      <address style="font-style: normal; font-size: 1rem; line-height: 1.8;">
+        📍 123 Sweet Street, Sugar City, CA<br>
+        📞 <a href="tel:+1234567890" style="color: #f0f0f5; text-decoration: none;">+1 (234) 567-890</a><br>
+        ✉️ <a href="mailto:hello@lilysbakery.com" style="color: #f0f0f5; text-decoration: none;">hello@lilysbakery.com</a>
+      </address>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1 1 150px; min-width: 150px;">
+      <h4 style="font-size: 1.25rem; margin-bottom: 1rem; color: #e94560;">Follow Us</h4>
+      <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+        <a href="#" aria-label="Facebook" style="color: #f0f0f5; transition: color 0.3s;">&#x1F426;</a>
+        <a href="#" aria-label="Twitter" style="color: #f0f0f5; transition: color 0.3s;">&#x1F426;</a>
+        <a href="#" aria-label="Instagram" style="color: #f0f0f5; transition: color 0.3s;">&#x1F426;</a>
+        <a href="#" aria-label="Pinterest" style="color: #f0f0f5; transition: color 0.3s;">&#x1F426;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div style="margin-top: 3rem; border-top: 1px solid #444; padding-top: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 0.85rem; color: #888;">
+    <p>© 2025 Lily’s Bakery. All rights reserved.</p>
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+      aria-label="Back to top"
+      style="
+        background: #e94560;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.3s;
+      "
+      onmouseover="this.style.background='#ff5677'"
+      onmouseout="this.style.background='#e94560'"
+    >
+      Back to Top ↑
+    </button>
+  </div>
+
+</footer>
+
+</body>
+</html>

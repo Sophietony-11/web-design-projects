@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<title></title>
+    <meta charset="utf-8">
+
+<form action="http/submit" method="POST">
+<fieldset>
+
+<legend>Personal information</legend>
+<label> 
+Postal code:
+<input placeholder="5 digit zip" name="placeholder"  id="" pattern=".{8,}" title="Eight or more characters"  minlength="5" spellcheck="false" required>
+</label>
+<br><br>
+    
+  <input type="hidden" id="custId" name="custId" value="3487">
+
+  
+  
+  <p></p>
+  </fieldset>
+  <p></p>
+  <label for="rating">Rating:</label>
+<input type="range" id="rating" name="rating" min="4" max="10" step="1" required>
+
+  
+  
+  
+ 
+ 
+
+  <p></p>
+   <label for="comments">Comment:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Placeholder" spellcheck="true">
+    </textarea>
+    <br><br>
+
+  
+  <p>Subscribe to our Mailing List:
+  <input type= "radio" id="Yes" name="Mailing_List" value="NO">
+  <label for="No">No </label>
+   <input type= "radio" id="No" name="Mailing_List" value="NO">
+  <label for="Yes"> Yes </label>
+  </p>
+<fieldset>
+    <legend>Mailing List Subscription:</legend>
+    
+
+    <input type="checkbox" id="sleep-robots" name="mailing-list" value="Sleep Robots">
+    <label for="sleep-robots">Sleep Robots</label><br>
+
+    <input type="checkbox" id="ow-campaign" name="mailing-list" value="Ow Campaign">
+    <label for="ow-campaign">Ow Campaign</label><br>
+</fieldset>
+
+  <p>
+  
+    <label for="birthday">Birthday:</label> 
+    <input type="date" id="birthday" name="birthday" value="2004-08-06" min="2004-07-06" max="2004-09-06" required>
+    
+</p>
+
+
+  </p>
+<label for="state">State:</label>
+	<select id="state" name="state" placeholder="Select a state" required>
+	<optgroup label="States">
+	<datalist>
+	 <option value="" selected>Select a state</option>
+    <option value="AL">Alabama</option>
+    <option value="IA">Iowa</option>
+    <option value="MN">Minnesota</option>
+    <option value="OH">Ohio</option>
+	</datalist>
+  </select>
+  </textarea>
+  <p>
+   <input type="Reset" value="Reset">
+   <input type="submit" value="Submit">
+   <br><button style='font-size:12px'>Submit Button  <img src="https://domfu.com/app5/db/htmlforms/buttons/4.png" width="50" height="50" buttom img alt><br>
+
+  
+  
+   
+</form> 
+</head>
+</body>
+ <script src="https://domfu.com/app5/db/html5forms/htmlformsgraderhelper.js"></script>
+   
+   

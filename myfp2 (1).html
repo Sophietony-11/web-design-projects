@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="https://images.stockcake.com/public/7/6/d/76d8f4eb-69d5-495c-a54e-4ec6933d7b03_large/elegant-fragrance-presentation-stockcake.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>SDQ</h1>
+            <h2>Created for your essence</h2>
+        </div>
+        <nav>
+            <ul>
+                <!-- Home Dropdown -->
+                <li class="dropdown">
+                    <a href="myfp2.html" class="dropbtn">
+                        <span class="material-icons" aria-label="Home">home</span> Home
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Welcome</a>
+                        <a href="#about-us">About Us</a>
+                        <a href="#Contact-us">Contact</a>
+                    </div>
+                </li>
+
+                <!-- Category Dropdown -->
+                <li class="dropdown">
+                    <a href="myshp.html" class="dropbtn">
+                        <span class="material-icons" aria-label="Category">category</span> Category
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="myshp.html#perfume_oil">Nature-Inspired</a>
+                        <a href="myshp.html#recommended">Luxury and Elegant</a>
+                        <a href="myshp.html#women">Romantic and Sensual</a>
+                        <a href="myshp.html#men">Mysterious and Intriguing</a>
+                    </div>
+                </li>
+
+                <!-- Cart Dropdown -->
+                <li class="dropdown">
+                    <a href="myCheckout.html" class="dropbtn">
+                        <span class="material-icons" aria-label="Cart">shopping_cart</span> Cart
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="myCheckout.html">Your Cart is Empty</a>
+                        <a href="myCheckout.html">View Cart</a>
+                        <a href="MYP2C.html">Checkout</a>
+                    </div>
+                </li>
+
+                <!-- Login ID Dropdown -->
+                <li class="dropdown">
+                    <a href="myLogin.html" class="dropbtn">
+                        <span class="material-icons" aria-label="Login ID">account_circle</span> Login ID
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="myLogin.html">Sign In</a>
+                        <a href="mysignup.html">Create Account</a>
+                        <a href="myforgot-password.html">Forgot Password</a>
+                    </div>
+                </li>
+
+                <!-- Search Dropdown -->
+                <li class="dropdown">
+                    <a href="myshp.html" class="dropbtn">
+                        <span class="material-icons" aria-label="Search">search</span> Search
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#best-sellers">Find Your Scent</a>
+                        <a href="myshp.html#men">Men</a>
+                        <a href="myshp.html#women">Women</a>
+                        <a href="myshp.html#recommended">Best Sellers</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Background Section with Preloaded Image -->
+        <span class="sr-only">A translucent perfume bottle radiates under ethereal lights, capturing the essence of elegance and grace.</span>
+    </main>
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            height: 400px; /* Adjust the height of the header */
+            background-image: url('https://images.stockcake.com/public/7/6/d/76d8f4eb-69d5-495c-a54e-4ec6933d7b03_large/elegant-fragrance-presentation-stockcake.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        /* Header Text */
+        .header-text {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        /* Navigation Menu */
+        nav {
+            position: absolute;
+            bottom: 20px; /* Position the nav towards the bottom of the header */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        /* Dropdown Styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Icon Styles */
+        .material-icons {
+            font-size: 24px;
+        }
+    </style>
+</body>
+</html>
+
+
+
+
+
+  <section class="banner">
+    <h2>Discover Your Signature Scent</h2>
+    <h3>Indulge in sophistication with our exclusive selection of premium perfumes, designed to capture the essence of elegance.</h3>
+    <a href="myshp.html" class="button">Shop Now</a>
+</section>
+<section class="categories">
+    <section id="best-sellers">
+        <h3>Explore Our Best Sellers</h3>
+        <div class="category-grid">
+            <div class="category">
+                <img src="https://t3.ftcdn.net/jpg/08/85/91/22/240_F_885912254_6pEiwwcrFewJxMo2pW5vtgtxcmKqeeVu.jpg" alt="Perfume bottle with orange slices and white flowers suggesting a fresh and fruity fragrance for women" class="category-image">
+                <h4>Citrus</h4>
+            </div>
+            <div class="category">
+                <img src="https://t3.ftcdn.net/jpg/08/32/50/64/240_F_832506439_41HK2BcsaIcdsfBmQqkNAbusGuV4MYpr.jpg" alt="A bottle of perfume with flowers on a table." class="category-image">
+                <h4>Floral</h4>
+            </div>
+            <div class="category">
+                <img src="https://as1.ftcdn.net/v2/jpg/08/53/65/90/1000_F_853659024_7DYvPodQiiox9ZIyzPj63aEHvNvp33W1.jpg" alt="Arabian agarwood perfume with Incense Chips on beige background, arabian out Transparent perfume bottle near the aged weathered wooden snag and stones. Perfume with woody notes concept." class="category-image">
+                <h4>Woody</h4>
+            </div>
+            <div class="category">
+                <img src="https://t3.ftcdn.net/jpg/10/81/58/86/240_F_1081588694_gwDaZjnMSaoVDHs9SSwQBTiIKoQdL8bM.jpg" alt="A close-up of a glass bottle of amber-colored perfume with a black cap, sitting on a table." class="category-image">
+                <h4>Spicy</h4>
+            </div>
+        </div>
+    </section>
+</section>
+
+<style>
+/* Banner Styling */
+.banner {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    color: #777;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.button {
+    background-color: #e2b97d;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c28a56;
+    transform: translateY(-3px);
+}
+
+/* Categories Section Styling */
+.categories {
+    margin: 60px 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.categories h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.category {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category h4 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.category-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category:hover .category-image {
+    transform: scale(1.05);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SDQ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-bottom: 2px solid #ddd;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .about-us {
+            text-align: center;
+            margin: 50px 20px;
+        }
+
+        .about-us h2 {
+            font-size: 4rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 3rem;
+            line-height: 1.8;
+            color: #555;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+  
+
+    <main>
+	 <section id="about-us">
+        <div class="about-us">
+        
+            <h2><strong>About Us</h2>
+            <img class="logo" src="https://logodesign.ai/svglogos/mM3G8tebgj.svg?1733457642636" alt="SDQ Logo">
+            <p>
+                 At SDQ, we believe that fragrances are more than just scents—they are gateways to cherished memories and profound emotions. Established in 2024, our mission is to craft exceptional perfumes that resonate with your essence, elevate your daily experiences, and leave a lasting impression. Each fragrance in our collection is a masterpiece, thoughtfully created to capture a unique story that reflects your individuality. 
+            
+            </p>
+            <p>
+                 Whether you're drawn to the elegance of floral bouquets, the vibrance of citrus notes, or the allure of woody undertones, SDQ offers a fragrance for every mood and occasion. Allow us to be responsible for your signature scent—one that speaks to who you are and enhances the moments that matter most.
+                
+            </p>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - SDQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for icons -->
+    
+    <!-- Preload for Rose Bloom -->
+    <link rel="preload" href="https://images.stockcake.com/public/0/1/4/014f45c6-eea9-4ebf-a35b-00b6ab968961_large/elegant-perfume-bottle-stockcake.jpg" as="image">
+    <!-- Preload for Amber Woods -->
+    <link rel="preload" href="https://images.stockcake.com/public/0/4/5/0456a7b8-0972-430f-b977-196dc0453220_large/elegant-perfume-bottle-stockcake.jpg" as="image">
+    <!-- Preload for Lemon Zest -->
+    <link rel="preload" href="https://images.stockcake.com/public/9/0/f/90f788ae-dff9-4473-a752-da78093b57c3_large/elegant-perfume-bottle-stockcake.jpg" as="image">
+    <!-- Preload for Eternal Kiss -->
+    <link rel="preload" href="https://images.stockcake.com/public/5/9/b/59b2ee0c-cb0b-4aac-9585-4eb5f9aa2834_large/heart-shaped-perfume-bottle-stockcake.jpg" as="image">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .product-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .product .icon {
+            color: #e74c3c;
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://images.stockcake.com/public/0/1/4/014f45c6-eea9-4ebf-a35b-00b6ab968961_large/elegant-perfume-bottle-stockcake.jpg" alt="Rose Bloom">
+                <h3>Rose Bloom</h3>
+                <p><i class="fas fa-spa icon"></i> Floral | $50</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://images.stockcake.com/public/0/4/5/0456a7b8-0972-430f-b977-196dc0453220_large/elegant-perfume-bottle-stockcake.jpg" alt="Amber Woods">
+                <h3>Amber Woods</h3>
+                <p><i class="fas fa-tree icon"></i> Woody | $65</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://images.stockcake.com/public/9/0/f/90f788ae-dff9-4473-a752-da78093b57c3_large/elegant-perfume-bottle-stockcake.jpg" alt="Lemon Zest">
+                <h3>Lemon Zest</h3>
+                <p><i class="fas fa-lemon icon"></i> Citrus | $45</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="https://images.stockcake.com/public/5/9/b/59b2ee0c-cb0b-4aac-9585-4eb5f9aa2834_large/heart-shaped-perfume-bottle-stockcake.jpg" alt="Eternal Kiss">
+                <h3>Eternal Kiss</h3>
+                <p><i class="fas fa-heart icon"></i> Romantic | $75</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .reviews-container {
+            display: flex; /* Makes the items horizontal */
+            gap: 20px; /* Adds spacing between items */
+            flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+            justify-content: center; /* Centers the content horizontally */
+        }
+
+        .review {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            max-width: 300px; /* Limits the width of each review */
+            text-align: center; /* Centers text and icons */
+        }
+
+        .review .stars {
+            color: gold;
+            font-size: 20px;
+        }
+
+        .review p {
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body class="Reviwes">
+
+<h1>Reviews</h1>
+
+<div class="reviews-container">
+    <div class="review">
+        <div class="stars">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <p>It smells so good, highly recommend!</p>
+        <p>@Musa A.</p>
+    </div>
+
+    <div class="review">
+        <div class="stars">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <p>Excellent service and nice fragrance.</p>
+        <p>@Riley F.</p>
+    </div>
+
+    <div class="review">
+        <div class="stars">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <p>Customer service is top-notch. <i class="glyphicon glyphicon-thumbs-up"></i></p>
+        <p>@Billy M.</p>
+    </div>
+
+    <!-- New Reviews -->
+    <div class="review">
+        <div class="stars">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <p>Double thumbs up for great service, and an amazing scent <i class="glyphicon glyphicon-thumbs-up"></i><i class="glyphicon glyphicon-thumbs-up"></i></p>
+        <p>@Salmah M.</p>
+    </div>
+
+    <div class="review">
+        <div class="stars">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <p>Recommend!</p>
+        <p>@Jack F.</p>
+    </div>
+
+    <div class="review">
+        <div class="stars">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <p>Good.</p>
+        <p>@Lee B.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SDQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <main>
+	 <section id="Contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </main>
+  
+  
+  
+  
+  
+      <style>
+    footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+</style>
+    <footer>
+	<p> Reach us at :</p>
+<p>	Phone : +1234567890</p>
+ <p> Email : SQDBIZ@gmail.com</p>
+	<p>Follow us on social media: <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
+        <p>&copy; 2024 SDQ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
